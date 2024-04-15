@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tìm ra số lớn nhất của 3 số</h3>
+<input type="number" id="a" placeholder="Nhập số 1:">
+<input type="number" id="b" placeholder="Nhập số 2:">
+<input type="number" id="c" placeholder="Nhập số 3:">
+<button onclick="kq()">Kết quả</button>
+<p id="kq"></p>
+</body>
+<script>
+    function kq() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+        if (a > b && a > c) {
+            document.getElementById('kq').innerHTML = 'a là số lớn nhất';
+        }
+        else if (b > a && b > c) {
+            document.getElementById('kq').innerHTML = 'b là số lớn nhất';
+        }
+        else {
+            document.getElementById('kq').innerHTML= 'Có ít nhất hai số bằng nhau'
+        }
+    }
+</script>
+</html>
